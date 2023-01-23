@@ -76,3 +76,12 @@ The test should assert that:
 2. The filter criteria (Role and Status) retain their values after the results are shown
 
 ![Admin Search Results](https://github.com/HeuristicSolutions/Heuristics.TestEngineerEval/blob/main/assets/AdminMemberSearch.png?raw=true)
+
+## Submitting your code sample
+
+You can send us a link to your GitHub repo, submit a PR to this one, or email us a .zip file; whatever works for you works for us.
+
+Want to earn "extra credit"? Be prepared to talk about:
+* How you might handle repeated logic, such as logging in
+* How you keep your tests from being brittle and constantly breaking when minor code changes are pushed
+* How you manage test data, such as knowing that "Barky McBarksALot" should already exist in Test 3
