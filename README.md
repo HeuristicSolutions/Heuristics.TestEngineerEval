@@ -1,4 +1,4 @@
-# Heuristics.TestEngineerEval
+# Test Engineer technical assessment
 
 ## How this works
 
@@ -10,9 +10,9 @@ To keep things simple, you will write some UI tests against our publicly-accessi
 
 ## Setting up the system under test
 
-You will be writing tests against our QA training site: [https://training.qa.learningbuilder.net/](https://training.qa.learningbuilder.net/)
-
 Since we serve the licensing and credentialing industry, we have created a fictional licensing organization called the "American Society of Office Dogs" to serve as a sample scenario :) 
+
+You will be writing tests against our QA training site: [https://training.qa.learningbuilder.net/](https://training.qa.learningbuilder.net/)
 
 **Note:** We turn off our QA sites when they are not being used, so you may need to click a button to start it up:
 
@@ -32,7 +32,8 @@ To complete the technical assessment, write the following tests:
 
 ## TEST 1 - New user can successfully create an account
 
-**User story:** "As an aspiring Office Dog, I can register a new account with the system so that I can begin my licensing journey."
+**User story:**
+"As an aspiring Office Dog, I can register a new account with the system so that I can begin my licensing journey."
 
 **Repro steps:**
 1. Click the orange "Get Started" button in the upper-left part of the login page
@@ -45,14 +46,31 @@ The test is considered successful if the user is redirected to the "Email Confir
 
 ## TEST 2 - Users are prevented from submitting duplicate email addresses
 
-User story: "As a user that is trying to register a new account with an email address that already exists, I am notified that the email address is in use and I am prompted to perform the Forgot Password flow instead"
+**User story:**
+"As a user that is trying to register a new account with an email address that already exists, I am notified that the email address is in use and I am prompted to perform the Forgot Password flow instead"
 
-Write a UI test that tries to register an account with an email address that is already in use (e.g. listed on the login page)
+**Repro steps:**
+1. Click the orange "Get Started" button in the upper-left part of the login page
+2. Fill out the registration form, using an email address that is already in use (e.g. listed on the login page)
 
+**Test requirements:**
 The test is considered successful if the user sees an alert message containing a link to the Forgot Password page:
 ![Already Exists Popup](https://github.com/HeuristicSolutions/Heuristics.TestEngineerEval/blob/main/assets/EmailExistsPopup.png?raw=true)
 
 
 ## TEST 3 - Admin users can search for other users by Role and Status
 
-User story: 
+**User story:**
+"As an administrator user, I can search for Members by Role and Status so that I can easily find accounts in various busines states."
+
+**Repro steps:**
+1. On the login page, click on "Arlene Admin" to log in as an administrator
+2. In the main nav bar, click on *Admin -> Members*
+3. In the "Role" dropdown, select "Office Dog"
+4. In the "Status" dropdown, select "Applicant"
+5. Click "Filter"
+
+**Test requirements**
+The test should assert that:
+1. "Barky McBarksALot" is included in the search results
+2. The filter criteria (Role and Status) retain their values after the results are shown
