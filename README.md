@@ -28,7 +28,11 @@ The training site has a number of pre-created accounts. To make it easy, they ar
 
 # Writing the tests
 
-To complete the technical assessment, write the following tests: 
+You are welcome to write your UI tests using whatever tool you would like. 
+
+We use Selenium, C#, and NUnit but you can use what's familiar; the point is to figure out how you think about automated testing, not to trip you up with platform-specific trick questions.
+
+Using your tool of choice, please write the following tests: 
 
 ## TEST 1 - New user can successfully create an account
 
