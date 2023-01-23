@@ -12,11 +12,13 @@ To keep things simple, you will write some UI tests against our publicly-accessi
 
 You will be writing tests against our QA training site: [https://training.qa.learningbuilder.net/](https://training.qa.learningbuilder.net/)
 
-We turn off our QA sites when they are not being used, so you may need to click a button to start it up:
+Since we serve the licensing and credentialing industry, we have created a fictional licensing organization called the "American Society of Office Dogs" to serve as a sample scenario :) 
+
+**Note:** We turn off our QA sites when they are not being used, so you may need to click a button to start it up:
 
 ![Starting the test site](https://github.com/HeuristicSolutions/Heuristics.TestEngineerEval/blob/main/assets/TurnSiteOn.png?raw=true)
  
-It may take a few minutes to full start up.
+**It may take a few minutes to fully start up, and pages may be slow to load the first time you access them.** The training site is hosted on a shared server with other QA resources; if responsiveness becomes an issue for you, please reach out and let us know!
 
 ## How to log in
 
@@ -27,3 +29,30 @@ The training site has a number of pre-created accounts. To make it easy, they ar
 ## Writing the tests
 
 To complete the technical assessment, write the following tests: 
+
+## TEST 1 - New user can successfully create an account
+
+**User story:** "As an aspiring Office Dog, I can register a new account with the system so that I can begin my licensing journey."
+
+**Repro steps:**
+1. Click the orange "Get Started" button in the upper-left part of the login page
+2. Fill out the registration form and submit it
+
+**Test requirements:**
+The test is considered successful if the user is redirected to the "Email Confirmation" page:
+![Email Confirmation Page](https://github.com/HeuristicSolutions/Heuristics.TestEngineerEval/blob/main/assets/EmailConfirmationPage.png?raw=true)
+
+
+## TEST 2 - Users are prevented from submitting duplicate email addresses
+
+User story: "As a user that is trying to register a new account with an email address that already exists, I am notified that the email address is in use and I am prompted to perform the Forgot Password flow instead"
+
+Write a UI test that tries to register an account with an email address that is already in use (e.g. listed on the login page)
+
+The test is considered successful if the user sees an alert message containing a link to the Forgot Password page:
+![Already Exists Popup](https://github.com/HeuristicSolutions/Heuristics.TestEngineerEval/blob/main/assets/EmailExistsPopup.png?raw=true)
+
+
+## TEST 3 - Admin users can search for other users by Role and Status
+
+User story: 
