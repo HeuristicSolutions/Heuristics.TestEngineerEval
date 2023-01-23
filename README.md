@@ -26,7 +26,7 @@ The training site has a number of pre-created accounts. To make it easy, they ar
 
 ![Logging in](https://github.com/HeuristicSolutions/Heuristics.TestEngineerEval/blob/main/assets/HowToLogIn.png?raw=true)
 
-## Writing the tests
+# Writing the tests
 
 To complete the technical assessment, write the following tests: 
 
