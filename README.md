@@ -74,3 +74,5 @@ The test is considered successful if the user sees an alert message containing a
 The test should assert that:
 1. "Barky McBarksALot" is included in the search results
 2. The filter criteria (Role and Status) retain their values after the results are shown
+
+![Admin Search Results](https://github.com/HeuristicSolutions/Heuristics.TestEngineerEval/blob/main/assets/AdminMemberSearch.png?raw=true)
