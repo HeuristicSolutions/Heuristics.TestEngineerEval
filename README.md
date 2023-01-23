@@ -14,7 +14,7 @@ You will be writing tests against our QA training site: [https://training.qa.lea
 
 We turn off our QA sites when they are not being used, so you may need to click a button to start it up:
 
-![Starting the test site](https://github.com/heuristicsolutions/Heuristics.TestEngineerEval/blob/master/assets/TurnSiteOn.png)
+![Starting the test site](https://github.com/HeuristicSolutions/Heuristics.TestEngineerEval/blob/main/assets/TurnSiteOn.png?raw=true)
  
 It may take a few minutes to full start up.
 
@@ -22,7 +22,7 @@ It may take a few minutes to full start up.
 
 The training site has a number of pre-created accounts. To make it easy, they are listed on the login page, and you can click on a name to log in as that persona.
 
-![Logging in](https://github.com/heuristicsolutions/Heuristics.TestEngineerEval/blob/master/assets/HowToLogIn.png)
+![Logging in](https://github.com/HeuristicSolutions/Heuristics.TestEngineerEval/blob/main/assets/HowToLogIn.png?raw=true)
 
 ## Writing the tests
 
