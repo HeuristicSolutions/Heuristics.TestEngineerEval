@@ -1,18 +1,29 @@
 # Test Engineer technical assessment
 
-## How this works
-
 Thank you for your interest in a Test Engineer position with Heuristic Solutions! (*If you haven't already had a screening call with us, please do that first!*) 
 
-This assessment will generate a code sample that we can collaboratively review in a technical interview. If you already have samples of your UI tests that you can share with us, those are acceptable too!
+As part of the assessment, you will write a few tests against a simple, web-based sample application. We will then perform a collaborative code review during a technical interview. 
 
-As part of the assessment, you will write a few tests against a simple, web-based sample application.
+---------------------------------
 
-**There are two ways to take the assessment**:
+**We know your time is valuable. We're only asking for 2 to 3 hours** on this. If you can't finish the whole thing, that's OK! Do what you can.
+
+You're welcome to spend _more_ time on it if you want, but it's not required.
+
+If you already have samples of your UI tests that you can share with us, those are acceptable too!
+
+---------------------------------
+
+# Getting set up
+
+To get started, you'll need a running instance of the sample app so that you can write tests against it.
+
+There are two ways to do that:
 1. We can give you a fully-provisioned virtual machine with the sample app and dev tools pre-installed;
 1. You can install the sample app on your own machine and use the dev tools you already have installed.
 
-It doesn't matter to us, we just want you to focus on writing the tests and not fighting with app setup headaches. 
+You can do whichever is easiest for you. 
+
 
 ## Using the virtual machine
 
@@ -124,6 +135,7 @@ If you are not using the VM, then please create a **C# nUnit project with Seleni
 1. Users can access historical Order Details pages for products that have been deleted
 1. Deleted products DO NOT show up in the front-end product list and cannot be purchased any longer
 
+![Login Flow](https://github.com/HeuristicSolutions/Heuristics.TestEngineerEval/blob/main/assets/SampleApp-DeleteProduct.png?raw=true)
 
 # What's next?
 When you're finished, you can send us a link to your GitHub repo, or you can zip up your test project and email it. 
