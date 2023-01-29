@@ -46,6 +46,8 @@ If you are not using the VM, then please create a **C# nUnit project with Seleni
 **Test conditions:**
 1. After registering, the "Login" element in the upper-right corner is replaced with the email address of the logged-in user
 
+![Login Flow](https://github.com/HeuristicSolutions/Heuristics.TestEngineerEval/blob/main/assets/SampleApp-Login.png?raw=true)
+
 
 ## Test 2 - Users can search for products by brand
 **User story**: As a user that is trying to find products for a specific brand, I can filter the product listing by that brand.
@@ -59,6 +61,8 @@ If you are not using the VM, then please create a **C# nUnit project with Seleni
 1. When using a brand that DOES have products associated with it, the list is correctly filtered to those products
 1. When using a brand that DOES NOT have products associated with it, the user sees a "THERE ARE NO RESULTS THAT MATCH YOUR SEARCH" method
 
+![Login Flow](https://github.com/HeuristicSolutions/Heuristics.TestEngineerEval/blob/main/assets/SampleApp-BrandFilter.png?raw=true)
+
 
 ## Test 3 - Users can add products to a cart
 **User story**: As a user that has added something to my cart, I can change the quantity that I wish to order.
@@ -70,6 +74,8 @@ If you are not using the VM, then please create a **C# nUnit project with Seleni
 
 **Test conditions:**
 1. The order subtotal is correctly updated
+
+![Login Flow](https://github.com/HeuristicSolutions/Heuristics.TestEngineerEval/blob/main/assets/SampleApp-ShoppingCart.png?raw=true)
 
 
 ## Test 4 - Users can place orders
@@ -85,6 +91,8 @@ If you are not using the VM, then please create a **C# nUnit project with Seleni
 1. User sees a "Thanks for your Order" confirmation page
 1. User can view the order details by going to their "Order History" page
 
+![Login Flow](https://github.com/HeuristicSolutions/Heuristics.TestEngineerEval/blob/main/assets/SampleApp-OrderDetails.png?raw=true)
+
 
 ## Test 5 - Admins can create new products
 **User story**: As an administrative user, I can add new products to the system so that they are available to purchase.
@@ -97,6 +105,8 @@ If you are not using the VM, then please create a **C# nUnit project with Seleni
 **Test conditions:**
 1. When fields are left blank, user sees validation messages about required fields being left blank (Name, Description, and Price are required)
 1. Newly-added products appear in the list
+
+![Login Flow](https://github.com/HeuristicSolutions/Heuristics.TestEngineerEval/blob/main/assets/SampleApp-AddProduct.png?raw=true)
 
 
 ## Test 6 - Admins can delete existing products
@@ -114,6 +124,7 @@ If you are not using the VM, then please create a **C# nUnit project with Seleni
 1. Users can access historical Order Details pages for products that have been deleted
 1. Deleted products DO NOT show up in the front-end product list and cannot be purchased any longer
 
+![Login Flow](https://github.com/HeuristicSolutions/Heuristics.TestEngineerEval/blob/main/assets/SampleApp-DeleteProduct.png?raw=true)
 
 # What's next?
 When you're finished, you can send us a link to your GitHub repo, or you can zip up your test project and email it. 
