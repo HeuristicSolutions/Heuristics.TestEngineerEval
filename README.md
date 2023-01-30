@@ -31,7 +31,7 @@ At your request we'll send you a virtual machine image that already has the samp
 
 You will need to download [VMWare Workstation Player](https://customerconnect.vmware.com/en/downloads/info/slug/desktop_end_user_computing/vmware_workstation_player/16_0) to access the VM. It is freely available.
 
-You will also need about 60GB of free space to download the VM image from us.
+You will also need about 40GB of free space to download the VM image from us.
 
 ## Running the sample app yourself
 
