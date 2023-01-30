@@ -1,18 +1,29 @@
 # Test Engineer technical assessment
 
-## How this works
-
 Thank you for your interest in a Test Engineer position with Heuristic Solutions! (*If you haven't already had a screening call with us, please do that first!*) 
 
-This assessment will generate a code sample that we can collaboratively review in a technical interview. If you already have samples of your UI tests that you can share with us, those are acceptable too!
+As part of the assessment, you will write a few tests against a simple, web-based sample application. We will then perform a collaborative code review during a technical interview. 
 
-As part of the assessment, you will write a few tests against a simple, web-based sample application.
+---------------------------------
 
-**There are two ways to take the assessment**:
+**We know your time is valuable. We're only asking for 2 to 3 hours** on this. If you can't finish the whole thing, that's OK! Do what you can.
+
+You're welcome to spend _more_ time on it if you want, but it's not required.
+
+If you already have samples of your UI tests that you can share with us, those are acceptable too!
+
+---------------------------------
+
+# Getting set up
+
+To get started, you'll need a running instance of the sample app so that you can write tests against it.
+
+There are two ways to do that:
 1. We can give you a fully-provisioned virtual machine with the sample app and dev tools pre-installed;
 1. You can install the sample app on your own machine and use the dev tools you already have installed.
 
-It doesn't matter to us, we just want you to focus on writing the tests and not fighting with app setup headaches. 
+You can do whichever is easiest for you. 
+
 
 ## Using the virtual machine
 
@@ -20,7 +31,7 @@ At your request we'll send you a virtual machine image that already has the samp
 
 You will need to download [VMWare Workstation Player](https://customerconnect.vmware.com/en/downloads/info/slug/desktop_end_user_computing/vmware_workstation_player/16_0) to access the VM. It is freely available.
 
-You will also need about 60GB of free space to download the VM image from us.
+You will also need about 40GB of free space to download the VM image from us.
 
 ## Running the sample app yourself
 
@@ -46,6 +57,8 @@ If you are not using the VM, then please create a **C# nUnit project with Seleni
 **Test conditions:**
 1. After registering, the "Login" element in the upper-right corner is replaced with the email address of the logged-in user
 
+![Login Flow](https://github.com/HeuristicSolutions/Heuristics.TestEngineerEval/blob/main/assets/SampleApp-Login.png?raw=true)
+
 
 ## Test 2 - Users can search for products by brand
 **User story**: As a user that is trying to find products for a specific brand, I can filter the product listing by that brand.
@@ -59,6 +72,8 @@ If you are not using the VM, then please create a **C# nUnit project with Seleni
 1. When using a brand that DOES have products associated with it, the list is correctly filtered to those products
 1. When using a brand that DOES NOT have products associated with it, the user sees a "THERE ARE NO RESULTS THAT MATCH YOUR SEARCH" method
 
+![Login Flow](https://github.com/HeuristicSolutions/Heuristics.TestEngineerEval/blob/main/assets/SampleApp-BrandFilter.png?raw=true)
+
 
 ## Test 3 - Users can add products to a cart
 **User story**: As a user that has added something to my cart, I can change the quantity that I wish to order.
@@ -70,6 +85,8 @@ If you are not using the VM, then please create a **C# nUnit project with Seleni
 
 **Test conditions:**
 1. The order subtotal is correctly updated
+
+![Login Flow](https://github.com/HeuristicSolutions/Heuristics.TestEngineerEval/blob/main/assets/SampleApp-ShoppingCart.png?raw=true)
 
 
 ## Test 4 - Users can place orders
@@ -85,6 +102,8 @@ If you are not using the VM, then please create a **C# nUnit project with Seleni
 1. User sees a "Thanks for your Order" confirmation page
 1. User can view the order details by going to their "Order History" page
 
+![Login Flow](https://github.com/HeuristicSolutions/Heuristics.TestEngineerEval/blob/main/assets/SampleApp-OrderDetails.png?raw=true)
+
 
 ## Test 5 - Admins can create new products
 **User story**: As an administrative user, I can add new products to the system so that they are available to purchase.
@@ -97,6 +116,8 @@ If you are not using the VM, then please create a **C# nUnit project with Seleni
 **Test conditions:**
 1. When fields are left blank, user sees validation messages about required fields being left blank (Name, Description, and Price are required)
 1. Newly-added products appear in the list
+
+![Login Flow](https://github.com/HeuristicSolutions/Heuristics.TestEngineerEval/blob/main/assets/SampleApp-AddProduct.png?raw=true)
 
 
 ## Test 6 - Admins can delete existing products
@@ -114,6 +135,7 @@ If you are not using the VM, then please create a **C# nUnit project with Seleni
 1. Users can access historical Order Details pages for products that have been deleted
 1. Deleted products DO NOT show up in the front-end product list and cannot be purchased any longer
 
+![Login Flow](https://github.com/HeuristicSolutions/Heuristics.TestEngineerEval/blob/main/assets/SampleApp-DeleteProduct.png?raw=true)
 
 # What's next?
 When you're finished, you can send us a link to your GitHub repo, or you can zip up your test project and email it. 
