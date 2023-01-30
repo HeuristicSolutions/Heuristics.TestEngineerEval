@@ -75,32 +75,33 @@ If you are not using the VM, then please create a **C# nUnit project with Seleni
 ![Login Flow](https://github.com/HeuristicSolutions/Heuristics.TestEngineerEval/blob/main/assets/SampleApp-BrandFilter.png?raw=true)
 
 
-## Test 3 - Users can add products to a cart
-**User story**: As a user that has added something to my cart, I can change the quantity that I wish to order.
+## Test 3 - Users can add products to a cart/basket
+**User story**: As a user that has added something to my shopping cart, I can change the quantity that I wish to order.
 
 **Repro steps:**
 1. Go to https://localhost:5001
-1. Add a product to your cart
-1. Change the quantity of that item in the cart
+1. Add a product to your basket
+1. Change the quantity of that item in the basket and click "update"
 
 **Test conditions:**
-1. The order subtotal is correctly updated
+1. The item is added initially
+* 1. The *per-item* subtotal and the *total order* subtotals are correctly updated
 
 ![Login Flow](https://github.com/HeuristicSolutions/Heuristics.TestEngineerEval/blob/main/assets/SampleApp-ShoppingCart.png?raw=true)
 
 
 ## Test 4 - Users can place orders
-**User story**: As a user that has added something to my cart, I can submit the order to complete the checkout process
+**User story**: As a user that has added something to my cart/basket, I can submit the order to complete the checkout process
 
 **Repro steps:**
 1. Go to https://localhost:5001
 1. Add a product to your cart
 1. Click "checkout"
-1. Confirm order details and click "Place Order"
+1. Confirm order details and click "Pay Now" 
 
 **Test conditions:**
 1. User sees a "Thanks for your Order" confirmation page
-1. User can view the order details by going to their "Order History" page
+1. User can view the order details by going to their "My Orders" page and then clicking the "Details" text link
 
 ![Login Flow](https://github.com/HeuristicSolutions/Heuristics.TestEngineerEval/blob/main/assets/SampleApp-OrderDetails.png?raw=true)
 
