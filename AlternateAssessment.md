@@ -84,6 +84,33 @@ The test should assert that:
 
 ![Admin Search Results](https://github.com/HeuristicSolutions/Heuristics.TestEngineerEval/blob/main/assets/AdminMemberSearch.png?raw=true)
 
+
+## TEST 4 - Admin users can delete Members
+
+| :exclamation:        | Because you're using a shared web app, we don't want you actually changing data. Tell us how you'd approach this problem, but don't actually automate it. |
+|---------------|:------------------------|
+
+**User story:**
+"As an administrator user, I can search for Members and delete them."
+
+**How would you go about this?**
+Pretend you were going to write a test that deleted a user. How would you write it? 
+
+If you write the test to delete a specific user, won't the test fail on a subsequent run (since that user will no longer exist)?
+
+
+## TEST 5 - Brand new users see a welcome message
+
+| :exclamation:        | The existing app doesn't actually implement this functionality, so you can't write a real test for it. Tell us how you'd approach the problem if the functionality did exist. |
+|---------------|:------------------------|
+
+**User story:**
+"The very first time a user logs in, they see a welcome message. The welcome message is NOT displayed upon subsequent logins."
+
+**How would you go about this?**
+How would you write this test so that it continues to pass on subsequent test runs?
+
+
 ## Submitting your code sample
 
 You can send us a link to your GitHub repo, submit a PR to this one, or email us a .zip file; whatever works for you works for us.
